@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Знайомство з JS</title>
+    <style>
+    	#gallery {
+    		display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		}    
+		#currentPhoto {
+/*    		padding: 5px;*/
+    	}
+    	button {
+    	padding: 5px 10px;
+    	margin: 5px;
+    	background: chocolate;
+    	color: white;
+    	width: 100px;
+    	float: right;
+    	}
+    	#gallery > img {
+    	padding:5px;
+    	}
+    </style>
+</head>
+<body>
+	<div id="gallery">
+		<img id="currentPhoto" src="images/photo1.jpg" />
+	</div>
+	<button id="next" onclick="nextPhoto()">Next</button>
+	<button id="add" onclick="addPhoto()">Add</button>
+
+	<script src="js/gallery.js"></script>
+</body>
+</html>
